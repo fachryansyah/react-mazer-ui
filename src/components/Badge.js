@@ -9,7 +9,7 @@ export default function Badge(props) {
     }
 
     return (
-        <span className={`badge ${getClassStatus(light)} ${className}`}>
+        <span className={`badge ${getClassStatus(light)} ${className}`} {...props}>
             {label}
         </span>
     );

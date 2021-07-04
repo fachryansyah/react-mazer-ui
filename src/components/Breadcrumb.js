@@ -11,7 +11,7 @@ export default function Breadcrumb(props) {
     }
 
     return (
-        <nav className={`breadcrumb ${className}`}>
+        <nav {...props} className={`breadcrumb ${className}`}>
             {item.map((v, i) => (
                 <li key={i} className={`breadcrumb-item ${isActive(v.active)}`}>
                     {v.active ? (
