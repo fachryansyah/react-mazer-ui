@@ -35,3 +35,105 @@ DropdownPrimary.args = {
         </div>
     )
 };
+
+export const DropdownSecondary = Template.bind({});
+DropdownSecondary.args = {
+    children: (
+        <div>
+            <DropdownToggle id="dropdown-1" status="secondary">
+                Secondary
+            </DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Menu A</DropdownItem>
+                <DropdownItem>Menu B</DropdownItem>
+                <DropdownItem>Menu C</DropdownItem>
+                <DropdownItem>Menu D</DropdownItem>
+            </DropdownMenu>
+        </div>
+    )
+};
+
+export const DropdownSuccess = Template.bind({});
+DropdownSuccess.args = {
+    children: (
+        <div>
+            <DropdownToggle id="dropdown-1" status="success">
+                Success
+            </DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Menu A</DropdownItem>
+                <DropdownItem>Menu B</DropdownItem>
+                <DropdownItem>Menu C</DropdownItem>
+                <DropdownItem>Menu D</DropdownItem>
+            </DropdownMenu>
+        </div>
+    )
+};
+
+export const DropdownInfo = Template.bind({});
+DropdownInfo.args = {
+    children: (
+        <div>
+            <DropdownToggle id="dropdown-1" status="info">
+                Info
+            </DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Menu A</DropdownItem>
+                <DropdownItem>Menu B</DropdownItem>
+                <DropdownItem>Menu C</DropdownItem>
+                <DropdownItem>Menu D</DropdownItem>
+            </DropdownMenu>
+        </div>
+    )
+};
+
+export const DropdownDanger = Template.bind({});
+DropdownDanger.args = {
+    children: (
+        <div>
+            <DropdownToggle id="dropdown-1" status="danger">
+                Danger
+            </DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Menu A</DropdownItem>
+                <DropdownItem>Menu B</DropdownItem>
+                <DropdownItem>Menu C</DropdownItem>
+                <DropdownItem>Menu D</DropdownItem>
+            </DropdownMenu>
+        </div>
+    )
+};
+
+export const DropdownWarning = Template.bind({});
+DropdownWarning.args = {
+    children: (
+        <div>
+            <DropdownToggle id="dropdown-1" status="warning">
+                Warning
+            </DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Menu A</DropdownItem>
+                <DropdownItem>Menu B</DropdownItem>
+                <DropdownItem>Menu C</DropdownItem>
+                <DropdownItem>Menu D</DropdownItem>
+            </DropdownMenu>
+        </div>
+    )
+};
+
+export const DropdownDark = Template.bind({});
+DropdownDark.args = {
+    children: (
+        <div>
+            <DropdownToggle id="dropdown-1" status="dark">
+                Dark
+            </DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Menu A</DropdownItem>
+                <DropdownItem>Menu B</DropdownItem>
+                <DropdownItem>Menu C</DropdownItem>
+                <DropdownItem>Menu D</DropdownItem>
+            </DropdownMenu>
+        </div>
+    )
+};

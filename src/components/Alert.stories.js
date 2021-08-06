@@ -128,5 +128,6 @@ export const AlertDismissable = Template.bind({});
 AlertDismissable.args = {
     content: "This is primary alert.",
     status: "primary",
-    dismissable: true
+    toggle: () => alert("Close it") ,
+    isOpen: true
 };
