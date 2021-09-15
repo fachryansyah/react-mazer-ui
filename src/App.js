@@ -2,7 +2,7 @@ import {
   Card,
   CardBody,
   CardFooter,
-  CardHeader
+  CardHeader,
 } from "./components";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <CardBody>
         <CardHeader title="Im Header" />
           im card content
-        </CardBody>
+      </CardBody>
       <CardFooter>
         iam card footer
       </CardFooter>

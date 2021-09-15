@@ -11,7 +11,7 @@ export default function ButtonGroup(props) {
 }
 
 ButtonGroup.propTypes = {
-    children: PropTypes.element
+    children: PropTypes.node
 }
 
 ButtonGroup.defaultProps = {
