@@ -11,7 +11,7 @@ export default function Card(props) {
 }
 
 Card.propTypes = {
-    children: PropTypes.element,
+    children: PropTypes.node,
     className: PropTypes.string
 }
 
