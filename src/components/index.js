@@ -8,11 +8,15 @@ import Card from "./Card";
 import CardBody from "./CardBody";
 import CardFooter from "./CardFooter";
 import CardHeader from "./CardHeader";
+import ButtonGroup from "./ButtonGroup";
+import Dropdown from "./Dropdown";
 
 export { 
     Button,
     Card,
     CardBody,
     CardFooter,
-    CardHeader
+    CardHeader,
+    ButtonGroup,
+    Dropdown
 };

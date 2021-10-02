@@ -16,7 +16,7 @@ export default function Dropdown(props) {
 
 Dropdown.propTypes = {
     label: PropTypes.string,
-    children: PropTypes.element,
+    children: PropTypes.node,
     direction: PropTypes.string
 }
 
