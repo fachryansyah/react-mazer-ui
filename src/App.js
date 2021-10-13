@@ -4,18 +4,21 @@ import {
   CardFooter,
   CardHeader,
 } from "./components";
+import HorizontalLayout from "./layouts/HorizontalLayout";
 
 function App() {
   return (
-    <Card>
-      <CardBody>
-        <CardHeader title="Im Header" />
-          im card content
-      </CardBody>
-      <CardFooter>
-        iam card footer
-      </CardFooter>
-    </Card>
+      <HorizontalLayout>
+          <Card>
+              <CardBody>
+                  <CardHeader title="Im Header" />
+                  im card content
+              </CardBody>
+              <CardFooter>
+                  iam card footer
+              </CardFooter>
+          </Card>
+      </HorizontalLayout>
   );
 }
 
