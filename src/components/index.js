@@ -10,6 +10,7 @@ import CardFooter from "./CardFooter";
 import CardHeader from "./CardHeader";
 import ButtonGroup from "./ButtonGroup";
 import Dropdown from "./Dropdown";
+import ProgressBar from "./ProgressBar";
 
 export { 
     Button,
@@ -18,5 +19,6 @@ export {
     CardFooter,
     CardHeader,
     ButtonGroup,
-    Dropdown
+    Dropdown,
+    ProgressBar
 };
