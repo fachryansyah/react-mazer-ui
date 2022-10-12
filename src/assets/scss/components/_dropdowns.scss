@@ -1,0 +1,24 @@
+.btn:not(.btn-light):not([class^="btn-outline-"]) .dropdown-toggle:after {
+    color: #fff;
+}
+.dropdown-menu-large {
+    min-width: 16rem;
+}
+.dropdown-menu {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.03);
+}
+.dropdown-item {
+    transition: all .5s;
+}
+.dropdown-menu-end.show {
+    top: 100%;
+    right: 0;
+}
+.dropdown {
+    .avatar {
+        margin-right: .6rem;
+    }
+}
+.user-dropdown-status, .user-dropdown-name {
+    margin: 0;
+}
