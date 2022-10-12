@@ -41,7 +41,7 @@ const HorizontalLayout = ({
             </div>
 
             <footer>
-                <div className="container">
+                <div className="container mt-4">
                     <div className="footer clearfix mb-0 text-muted">
                         <div className="float-start">
                             <p>2021 &copy; Mazer</p>
