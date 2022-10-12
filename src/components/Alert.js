@@ -3,30 +3,42 @@ import PropTypes from "prop-types";
 import "bootstrap/js/dist/alert";
 
 export default function Alert(props) {
-    const {status, heading, content, light, dismissable} = props;
+    const { status, heading, content, light, isOpen, toggle } = props;
 
     const getClassStatus = (val) => {
         return val ? `alert-light-${status}` : `alert-${status}`;
     }
 
-    const getClassDismissable = (val) => {
-        return val ? "alert-dismissible fade show" : "";
-    }
-
     return (
-        <div className={`alert ${getClassStatus(light)} ${getClassDismissable(dismissable)}`} role="alert">
-            {heading ? (
-                <h4 className="alert-heading">{heading}</h4>
-            ): null}
+        <>
+            {typeof toggle == "function" ? (
+                <>
+                    {isOpen ? (
+                        <div className={`alert ${getClassStatus(light)} alert-dismissible fade show`} role="alert">
+                            {heading ? (
+                                <h4 className="alert-heading">{heading}</h4>
+                            ) : null}
 
-            {content ? (
-                <p>{content}</p>
-            ): null}
+                            {content ? (
+                                <p>{content}</p>
+                            ) : null}
 
-            {dismissable ? (
-                <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" />
-            ): null}
-        </div>
+                            <button type="button" className="btn-close" aria-label="Close" onClick={toggle} />
+                        </div>
+                    ) : null}
+                </>
+            ) : (
+                <div className={`alert ${getClassStatus(light)}`} role="alert">
+                    {heading ? (
+                        <h4 className="alert-heading">{heading}</h4>
+                    ) : null}
+
+                    {content ? (
+                        <p>{content}</p>
+                    ) : null}
+                </div>
+            )}
+        </>
     )
 }
 
@@ -35,7 +47,8 @@ Alert.propTypes = {
     heading: PropTypes.string,
     content: PropTypes.string,
     light: PropTypes.bool,
-    dismissable: PropTypes.bool
+    isOpen: PropTypes.bool,
+    toggle: PropTypes.func
 }
 
 Alert.defaultProps = {
@@ -43,5 +56,6 @@ Alert.defaultProps = {
     heading: "",
     content: "",
     light: false,
-    dismissable: false
+    isOpen: true,
+    toggle: false
 }

@@ -3,11 +3,25 @@ import PropTypes from "prop-types";
 import "bootstrap/js/dist/dropdown";
 
 export default function Dropdown(props) {
-    const { label, children } = props;
+    const { label, children, direction } = props;
     return (
-        <div {...props} className="dropdown">
-            {children}
+        <div className="btn-group">
+            <div {...props} className="dropdown dropup">
+                {children}
+            </div>
         </div>
     );
 }
 
+
+Dropdown.propTypes = {
+    label: PropTypes.string,
+    children: PropTypes.node,
+    direction: PropTypes.string
+}
+
+Dropdown.defaultProps = {
+    label: null,
+    children: null,
+    direction: null
+}
