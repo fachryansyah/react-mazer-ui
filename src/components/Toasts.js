@@ -14,7 +14,7 @@ export default function Toasts(props) {
   }
   
   return (
-    <div className={`toast overflow-hidden ${isOpen ? "show d-block" : "d-none"}`} role="alert" aria-live="assertive" aria-atomic="true">
+    <div className={`toast ${isOpen ? "show d-block" : "d-none"}`} role="alert" aria-live="assertive" aria-atomic="true">
       <div className={`toast-header rounded-top border-0 ${dark && "bg-dark text-white"}`}>
           {header_icon}
           <strong className="me-auto">{header}</strong>
