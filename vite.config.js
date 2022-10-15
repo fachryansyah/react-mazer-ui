@@ -7,6 +7,7 @@ export default ({ mode }) => {
   return defineConfig({
     plugins: [react()],
     build: {
+      sourcemap: true,
       lib: {
         entry: resolve("src", "components/index.jsx"),
         name: "ReactMazerUI",
