@@ -28,7 +28,7 @@ $ git clone https://github.com/fachryansyah/react-mazer-ui && npm install && npm
 ```
 
 ## Documentation
-on the way
+On The Way
 
 ## Demo
 Open the [demo page](http://zuramai.github.io/mazer/demo)
