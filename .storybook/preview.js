@@ -1,7 +1,5 @@
-import "../src/assets/css/bootstrap.css";
-import "../src/assets/vendors/bootstrap-icons/bootstrap-icons.css";
-import "../src/assets/css/app.css";
-import "../src/assets/css/font.css";
+import "../src/assets/scss/bootstrap.scss";
+import "../src/assets/scss/app.scss";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
