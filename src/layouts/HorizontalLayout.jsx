@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import logo from '../assets/images/logo/logo.png';
-import '../assets/css/app.css';
+import '../assets/scss/app.scss';
 
 const HorizontalLayout = ({
     children
